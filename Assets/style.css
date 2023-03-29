@@ -63,7 +63,7 @@ nav a {
 .pbox{
     align-items: end;
 }
-.subhead p{
+.subhead p {
     display: block;
     text-align: end;
     width: 20%;
@@ -78,36 +78,95 @@ img{
 
 main{
     background-color:aliceblue;
-
+display: flex;
+flex-wrap:wrap;
 }
 
-aside {
-    background-color:aliceblue;
-
-
+.AboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    background-color:green;
+    color: gray;
+    font-family: 'Arial', sans-serif;
 }
 
-footer{
-
-
-}
-
-.applications{
-/* display:flex; */
-margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
+.Aside {
     width: 20%;
+height: 100%;
+background-color: black;
+border: black;
+border: 10px;
+}
+
+.Aside h2 {
+    font-size: 50px;
+    color: yellow;
+}
+
+.line {
+    width: 5px;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    color: gray;
+    background-color: gray;
 }
 
-.placeholder1{
-/*insert flexbox properties here*/
-
+.textbox {
+    width: 60%;
 }
+
+.applications {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    background-color:green;
+    color: gray;
+    font-family: 'Arial', sans-serif;
+}
+
+.firstapp {
+    display: block;
+    background-color: white;
+    height: 50%;
+    width: 100%;
+}
+
+.placeholder1 {
+    display: inline;
+    background-color: red;
+    height: 50%;
+    width: 33%;
+}
+
+.placeholder2 {
+    display: inline;
+    background-color: yellow;
+    height: 50%;
+    width: 33%;
+}
+
+.placeholder3 {
+    display: inline;
+    background-color: purple;
+    height: 50%;
+    width: 30%;
+}
+
+.contactme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    background-color:green;
+    color: gray;
+    font-family: 'Arial', sans-serif;
+}
+
 
 @media screen and (max-width: 992px) {
   .placeholder1 {
