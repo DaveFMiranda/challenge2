@@ -78,103 +78,82 @@ img{
 
 main{
     background-color:aliceblue;
-display: flex;
-flex-wrap:wrap;
+display: grid;
+grid-template-columns: 25% 5% 35% 35%;
+grid-template-rows: 25% 25% 25% 25%;
+height: 1200px;
+width: 1200px;
 }
 
 .AboutMe {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 200px;
-    width: 100%;
-    background-color:green;
-    color: gray;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1 ;
+    background-color: black;
+    border: black;
     font-family: 'Arial', sans-serif;
 }
-
-.Aside {
-    width: 20%;
-height: 100%;
-background-color: black;
-border: black;
-border: 10px;
-}
-
-.Aside h2 {
-    font-size: 50px;
-    color: yellow;
+.AboutMe h2 {
+    color: white;
 }
 
 .line {
-    width: 5px;
-    height: 100%;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
     color: gray;
     background-color: gray;
 }
 
 .textbox {
-    width: 60%;
+    grid-column: 3 / 5;
+    grid-row: 1 / 1;
+
 }
 
 .applications {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 200px;
-    width: 100%;
+    grid-column: 1 / 1;
+    grid-row: 2 / 4;
     background-color:green;
     color: gray;
     font-family: 'Arial', sans-serif;
 }
+    
+.line2 {
+        grid-column: 2 / 2;
+        grid-row: 2 / 4;
+        color: gray;
+        background-color: gray;
+    }
 
 .firstapp {
-    display: block;
-    background-color: white;
-    height: 50%;
-    width: 100%;
+    background-color: purple;
+    grid-column: 3 / 5;
+    grid-row: 2 / 2;
 }
 
 .placeholder1 {
-    display: inline;
-    background-color: red;
-    height: 50%;
-    width: 33%;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
 }
 
 .placeholder2 {
-    display: inline;
-    background-color: yellow;
-    height: 50%;
-    width: 33%;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
 }
 
-.placeholder3 {
-    display: inline;
-    background-color: purple;
-    height: 50%;
-    width: 30%;
-}
 
 .contactme {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 200px;
-    width: 100%;
-    background-color:green;
+grid-column: 1 / 1;
+grid-row: 4 / 4;
+}
+
+.line3 {
+    grid-column: 2 / 2;
+    grid-row: 4 / 4;
     color: gray;
-    font-family: 'Arial', sans-serif;
+    background-color: gray;
 }
 
-
-@media screen and (max-width: 992px) {
-  .placeholder1 {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .placeholder1 {
-    width: 100%;
-  }
+.textbox3 {
+grid-column: 3 / 5;
+grid-row: 4 / 4;
 }
